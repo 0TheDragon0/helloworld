@@ -13,6 +13,11 @@ class Ariana {
         alert("I am in " + this.grade + " grade");
     }
 }
+/**
+ * This is a multi line comment
+ * This is a second line
+ */
+//This is a single line comment
 
 const ariana = new Ariana("Ari", 7);
 ariana.sayhello();
@@ -42,3 +47,19 @@ const kiana = new Kiana("Kiana", 2, "Roblox");
 kiana.sayhello();
 kiana.displaygrade();
 kiana.displayfavgame();
+
+class Dad extends Ariana{
+   favoritebook: string;
+   
+    constructor(n: string, g: number, fb: string) {
+        super("Ali", 0);
+        this.favoritebook = fb;
+    }
+    displayfavbook() {
+        alert("My favorite book is " + this.favoritebook);
+    }
+}
+const ali = new Dad("Ali", 0, "Sapiens");
+ali.sayhello();
+ali.displaygrade();
+ali.displayfavbook();
